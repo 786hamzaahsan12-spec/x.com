@@ -1,0 +1,2914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-black text-white">
+    <div class=" container  flex">
+        <div class="first  w-[60px] lg:w-[528px]  h-full bg-black text-white">
+            <div class="logo m-4 "><svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path fill="white" height="24px"
+                            d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="sidebar  flex justify-center items-center w-[60px] lg:w-[162px]">
+                <ul class="flex flex-col  ">
+
+                    <li
+                        class="font-bold flex items-center gap-4 px-4 py-3 rounded-full hover:hover:bg-[rgba(231,233,234,0.1)] cursor-pointer transition">
+                        <img src="home_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                            class="hidden lg:inline">Home</span>
+                    </li>
+                    <li
+                        class="flex items-center gap-4 px-4 py-3 rounded-full hover:hover:bg-[rgba(231,233,234,0.1)] cursor-pointer transition">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class=" w-7 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                                </path>
+                            </g>
+                        </svg><span class="hidden lg:inline">Explore</span>
+                    </li>
+                    <li
+                        class="flex  items-center gap-4 px-4 py-3 rounded-full hover:hover:bg-[rgba(231,233,234,0.1)] cursor-pointer transition">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class="  w-7 justify-center items-center    r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z">
+                                </path>
+                            </g>
+                        </svg><span class="hidden lg:inline">Notifications</span>
+                    </li>
+                    <li
+                        class="flex items-center gap-4 px-4 py-3 rounded-full hover:hover:bg-[rgba(231,233,234,0.1)] cursor-pointer transition">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class=" w-7 justify-center items-center    r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M10 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM6 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4zm13 4v3h2v-3h3V8h-3V5h-2v3h-3v2h3zM3.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C13.318 13.65 11.838 13 10 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C5.627 11.85 7.648 11 10 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H1.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46z">
+                                </path>
+                            </g>
+                        </svg><span class="hidden lg:inline">Follow</span>
+                    </li>
+                    <li
+                        class="flex items-center gap-4 px-4 py-3 rounded-full hover:hover:bg-[rgba(231,233,234,0.1)] cursor-pointer transition">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class="w-7 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M20.7 11.7c0-4.48-3.844-8.2-8.699-8.2-4.854 0-8.698 3.72-8.698 8.2v.015l-.001.014c-.02.667.09 1.225.25 1.767.083.28.176.545.276.839.098.285.202.595.288.918.177.663.284 1.401.156 2.271-.086.582-.274 1.191-.582 1.855 1.264.375 2.55.053 4.013-.599l.455-.203.437.242c1.07.594 1.917 1.08 3.406 1.08 4.855 0 8.7-3.72 8.7-8.199zm2 0c0 5.683-4.84 10.2-10.699 10.2-1.784 0-2.96-.555-3.95-1.095-1.876.768-4.02 1.2-6.245-.075l-.885-.505.524-.875c.54-.904.77-1.581.848-2.118.078-.526.02-.98-.11-1.463-.066-.25-.15-.502-.247-.788-.095-.277-.204-.59-.301-.92-.199-.674-.36-1.449-.332-2.39C1.322 6.002 6.154 1.5 12.002 1.5c5.859 0 10.7 4.518 10.7 10.2z">
+                                </path>
+                            </g>
+                        </svg> <span class="hidden lg:inline">Chat</span>
+                    </li>
+                    <li
+                        class="flex items-center gap-4 px-4 py-3 rounded-full hover:hover:bg-[rgba(231,233,234,0.1)] cursor-pointer transition">
+                        <svg viewBox="0 0 33 32" aria-hidden="true"
+                            class=" w-7 justify-center items-center    r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                </path>
+                            </g>
+                        </svg><span class="hidden lg:inline">Gork</span>
+                    </li>
+                    <li
+                        class="flex items-center gap-4 px-4 py-3 rounded-full hover:hover:bg-[rgba(231,233,234,0.1)] cursor-pointer transition">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class=" w-7 justify-center items-center    r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z">
+                                </path>
+                            </g>
+                        </svg><span class="hidden lg:inline">Profile</span>
+                    </li>
+                    <li
+                        class="flex items-center gap-4 px-4 py-3 rounded-full hover:hover:bg-[rgba(231,233,234,0.1)] cursor-pointer transition">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class=" w-7 justify-center items-center    r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path fill="white"
+                                    d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z">
+                                </path>
+                            </g>
+                        </svg><span class="hidden lg:inline">More</span>
+                    </li>
+
+
+                </ul>
+
+            </div>
+            <div class="flex justify-center">
+                <button class="w-[40px] lg:w-[193px] h-[40px] lg:h-auto
+        bg-white text-black font-bold
+        rounded-full
+        flex items-center justify-center
+        hover:bg-gray-200 transition">
+
+                    <!-- Mobile: Pencil -->
+                    <svg class="w-5 h-5 lg:hidden" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+                    </svg>
+
+                    <!-- Laptop: Post -->
+                    <span class="hidden lg:inline">Post</span>
+
+                </button>
+            </div>
+            <div class="w-[50px] flex justify-center lg:w-[220px] mt-4 h-[50px] lg:h-[65px]
+    bg-black
+    rounded-full
+    flex items-center
+    justify-center lg:justify-start
+    lg:px-5
+    text-white
+    hover:bg-[#181818]
+    cursor-pointer
+    transition">
+
+                <!-- Profile Image -->
+                <img src="ChatGPT Image Aug 13, 2026, 03_34_23 PM.png" alt="Profile" class="w-[40px] h-[40px]
+        rounded-full
+        object-cover
+        flex-shrink-0">
+
+                <!-- Name + Username -->
+                <div class="hidden lg:flex ml-4 flex-1 min-w-0 flex-col">
+
+                    <h2 class="text-[15px] font-bold leading-tight truncate">
+                        Hamza Ahsan
+                    </h2>
+
+                    <p class="text-[14px] text-[#71767b] leading-tight mt-1 truncate">
+                        @hamzaahsanmh
+                    </p>
+
+                </div>
+            </div>
+        </div>
+       <div class="second  h-screen overflow-y-auto scrollbar-none w-full border border-[#2f3336]">
+            <div class="w-full sticky top-0 z-50 bg-[rgb(0_0_0)] h-[60px]
+                      border-b border-[#2f3336]
+                     flex items-stretch">
+
+                <!-- For you -->
+                <button class="relative md:w-[0px] w-[109px]
+                             flex items-center justify-center
+                             text-white
+                             font-bold text-[15px]
+                             hover:bg-[#181818]">
+                    For you
+
+                    <!-- Active line -->
+                    <span class="absolute bottom-0 left-1/2 -translate-x-1/2
+                            w-[84px] h-[6px]
+                            bg-[#1d9bf0]
+                            rounded-full"></span>
+                </button>
+
+
+                <!-- Following -->
+                <button class="w-[109px]
+               flex items-center justify-center
+               text-[#71767b]
+               text-[15px]
+               hover:bg-[#181818]">
+                    Following
+                </button>
+
+
+                <!-- News -->
+                <button class="w-[109px]
+               flex items-center justify-center gap-2
+               text-[#71767b]
+               text-[15px]
+               hover:bg-[#181818]">
+
+                    <!-- News Icon -->
+                    <svg viewBox="0 0 24 24" class="w-[22px] h-[22px]" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="16" rx="2" />
+                        <path d="M7 8h5" />
+                        <path d="M7 12h5" />
+                        <path d="M7 16h3" />
+                        <path d="M15 8h3v8h-3z" />
+                    </svg>
+
+                    News
+                </button>
+
+
+                <!-- Business -->
+                <button class="w-[109px]
+               flex items-center justify-center gap-2
+               text-[#71767b]
+               text-[15px]
+               hover:bg-[#181818]">
+
+                    <!-- Briefcase Icon -->
+                    <svg viewBox="0 0 24 24" class="w-[22px] h-[22px]" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="7" width="18" height="13" rx="2" />
+                        <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                        <path d="M3 12h18" />
+                        <path d="M10 12v2h4v-2" />
+                    </svg>
+
+                    Business
+                </button>
+
+
+                <!-- Music -->
+                <button class="w-[109px]
+               flex items-center justify-center gap-2
+               text-[#71767b]
+               text-[15px]
+               hover:bg-[#181818]">
+
+                    <!-- Music Icon -->
+                    <svg viewBox="0 0 24 24" class="w-[22px] h-[22px]" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M9 18V5l11-2v13" />
+                        <circle cx="6" cy="18" r="3" />
+                        <circle cx="17" cy="16" r="3" />
+                    </svg>
+
+                    Music
+                </button>
+
+
+                <!-- Plus -->
+                <button class="flex-1
+               flex items-center justify-center
+               text-[#71767b]
+               text-[15px]
+               hover:bg-[#181818]">
+                    +
+                </button>
+
+
+
+
+            </div>
+
+            <!-- X POST COMPOSER -->
+
+            <div class="w-full bg-black border-x border-b border-[#2f3336]">
+
+                <!-- Top Composer -->
+                <div class="min-h-[100px] px-7 pt-6">
+
+                    <div class="flex gap-4">
+
+                        <!-- Profile Image - NO EXTERNAL FILE -->
+                        <div class="w-[40px] h-[40px] rounded-full overflow-hidden
+                       flex-shrink-0 bg-[#333]"> <img src="ChatGPT Image Aug 13, 2026, 03_34_23 PM.png" alt="">
+                            <!--                        
+                            <svg viewBox="0 0 100 100" class="w-full h-full">
+                                <defs>
+                                    <linearGradient id="profileGradient" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0%" stop-color="#6b4328" />
+                                        <stop offset="45%" stop-color="#24160e" />
+                                        <stop offset="100%" stop-color="#111" />
+                                    </linearGradient>
+                                </defs>
+
+                                <circle cx="50" cy="50" r="50" fill="url(#profileGradient)" />
+
+                                <circle cx="50" cy="31" r="13" fill="#d9a47b" />
+                                
+
+                                <path d="M28 83
+                           C30 61 39 52 50 52
+                           C61 52 70 61 72 83Z" fill="#f1f1f1" />
+
+                                <path d="M37 23
+                           C40 13 58 10 65 23
+                           C58 19 48 19 37 23Z" fill="#17100c" />
+
+                                <path d="M25 76
+                           C31 68 36 63 42 60" stroke="#8c572f" stroke-width="5" fill="none" opacity=".7" />
+                            </svg> -->
+                        </div>
+
+
+                        <!-- Composer Content -->
+                        <div class="flex-1 min-w-0">
+
+                            <!-- Text Area -->
+                            <textarea id="postInput" placeholder="What’s happening?" class="w-full mb-[-23px] h-[60px]
+                           bg-transparent
+                           text-[#e7e9ea]
+                           text-[19px]
+                           placeholder-[#71767b]
+                           outline-none
+                           resize-none"></textarea>
+
+
+                            <!-- Bottom Row -->
+                            <div class="flex items-center justify-between w-[301px] ml-[-44px]  lmd:w-[99px] mt-1   ">
+
+                                <!-- Icons -->
+                                <div class="flex items-center gap-4 left-1 md:gap-5">
+
+                                    <!-- Image -->
+                                    <button class="text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+                                        <svg viewBox="0 0 24 24" class="w-[22px] h-[22px]" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="3" width="18" height="18" rx="3" />
+                                            <circle cx="8.5" cy="8.5" r="1.5" />
+                                            <path d="M21 15l-5-5L5 21" />
+                                        </svg>
+                                    </button>
+
+
+                                    <!-- GIF -->
+                                    <button class="text-[#71767b]
+                                         hover:text-[#1d9bf0]
+                                         transition">
+                                        <span class="flex items-center justify-center
+                                       w-[22px] h-[22px]
+                                       border-2 border-current
+                                       rounded-[6px]
+                                       text-[9px] font-bold">
+                                            GIF
+                                        </span>
+                                    </button>
+
+
+                                    <!-- AI Agent -->
+                                    <button class="text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+                                        <svg viewBox="0 0 64 64" class="w-[22px] h-[22px]" fill="none"
+                                            stroke="currentColor" stroke-width="3">
+                                            <path d="M43 9
+                                                         C53 13 58 23 55 34
+                                                         C52 47 41 55 29 54
+                                                        C20 53 13 48 9 40" />
+
+                                            <path d="M14 45
+                                                        C17 35 25 28 35 26
+                                                        C43 24 48 20 50 14" />
+
+                                            <path d="M18 49
+                                                        C13 44 10 38 10 31
+                                                        C10 20 18 11 29 9" />
+                                        </svg>
+                                    </button>
+
+
+                                    <!-- Poll -->
+                                    <button class="text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+                                        <svg viewBox="0 0 24 24" class="w-[22px] h-[22px]" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="5" cy="7" r="2" />
+                                            <circle cx="5" cy="17" r="2" />
+                                            <path d="M9 7h11" />
+                                            <path d="M9 17h11" />
+                                            <path d="M9 12h7" />
+                                        </svg>
+                                    </button>
+
+
+                                    <!-- Emoji -->
+                                    <button class="text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+                                        <svg viewBox="0 0 24 24" class="w-[22px] h-[22px]" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="9" />
+                                            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                            <path d="M9 9h.01" />
+                                            <path d="M15 9h.01" />
+                                        </svg>
+                                    </button>
+
+
+                                    <!-- Schedule -->
+                                    <button class="text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+                                        <svg viewBox="0 0 24 24" class="w-[22px] h-[22px]" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="17" rx="2" />
+
+                                            <path d="M8 2v4" />
+                                            <path d="M16 2v4" />
+
+                                            <circle cx="16" cy="15" r="3" />
+
+                                            <path d="M16 13v2l1 1" />
+                                        </svg>
+                                    </button>
+
+
+                                    <!-- Location -->
+                                    <button class="text-[#71767b]
+                                                      hover:text-[#1d9bf0]
+                                                      transition">
+                                        <svg viewBox="0 0 24 24" class="w-[22px] h-[22px]" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M20 10c0 5-8 12-8 12
+                                       S4 15 4 10
+                                       a8 8 0 1 1 16 0Z" />
+
+                                            <circle cx="12" cy="10" r="2.5" />
+                                        </svg>
+                                    </button>
+
+
+                                    <!-- Flag -->
+                                    <button class="text-[#71767b]
+                                                     hover:text-[#1d9bf0]
+                                                     transition">
+                                        <svg viewBox="0 0 24 24" class="w-[22px] h-[22px]" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M5 21V4" />
+                                            <path d="M5 4h14l-4 5 4 5H5" />
+                                        </svg>
+                                    </button>
+
+                                </div>
+
+
+                                <!-- Post Button -->
+                                <button id="postBtn" class=" mb-2  hidden md:w-[74px] h-[39px]
+                                                 rounded-full
+                                                 bg-[#3b3b3b]
+                                                 text-black
+                                                 text-[15px]
+                                                 font-bold
+                                                 hover:bg-[#4a4a4a]
+                                                 transition">
+                                    Post
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Show Posts -->
+                <button id="showPosts" class="w-full h-[53px]
+                                 border-t border-[#2f3336]
+                                 flex items-center justify-center
+                                 text-[#1d9bf0]
+                                 text-[17px]
+                                 hover:bg-[#080808]
+                                 transition">
+                    Show 104 posts
+                </button>
+
+
+      <main class="w-full flex justify-center border-b-2 border-t-2 border-[#2f3336]">
+
+                    <!-- POST -->
+                    <article class="w-full max-w-[680px] border-x border-[#2f3336] bg-black">
+
+                        <div class="px-3 sm:px-4 py-3">
+
+                            <div class="flex gap-3">
+
+                                <!-- PROFILE IMAGE -->
+                                <div class="shrink-0">
+                                    <img src="imag/download (3).png"
+                                        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover" alt="Profile">
+                                </div>
+
+                                <!-- POST CONTENT -->
+                                <div class="min-w-0 flex-1">
+
+                                    <!-- USER INFO -->
+                                    <div class="flex items-center justify-between">
+
+                                        <div class="flex items-center gap-1 min-w-0">
+
+                                            <!-- NAME -->
+                                            <span class="font-bold text-[15px] truncate">
+                                                @nofiltertalkss
+                                            </span>
+
+                                            <!-- VERIFIED -->
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-[#1d9bf0] shrink-0">
+                                                <path
+                                                    d="M22.25 12c0-1.43-1.45-2.44-1.96-3.67-.53-1.27-.28-3.03-1.27-4.02-.99-.99-2.75-.74-4.02-1.27C13.77 2.53 12.78 1.08 12 1.08s-1.77 1.45-3 1.96c-1.27.53-3.03.28-4.02 1.27-1 .99-.74 2.75-1.27 4.02C2.53 9.77 1.08 10.78 1.08 12s1.45 2.23 1.96 3.67c.53 1.27.28 3.03 1.27 4.02.99.99 2.75.74 4.02 1.27 1.23.51 2.24 1.96 3.67 1.96s2.44-1.45 3.67-1.96c1.27-.53 3.03-.28 4.02-1.27.99-.99.74-2.75 1.27-4.02.51-1.23 1.96-2.24 1.96-3.67zM10.1 16.6l-3.7-3.7 1.4-1.4 2.3 2.29 5.7-5.7 1.4 1.42-7.1 7.09z" />
+                                            </svg>
+
+                                            <!-- TIME -->
+                                            <span class="text-[#71767b] text-[14px] sm:text-[16px]">
+                                                · 3h
+                                            </span>
+
+                                        </div>
+
+                                        <!-- MORE -->
+                                        <button class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center
+                            text-[#71767b]
+                            hover:bg-[#1d9bf0]/10
+                            hover:text-[#1d9bf0]
+                            transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                                                <circle cx="5" cy="12" r="2" />
+                                                <circle cx="12" cy="12" r="2" />
+                                                <circle cx="19" cy="12" r="2" />
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+
+                                    <!-- POST TEXT -->
+                                    <div class="mt-[-2px]">
+
+                                        <p class="text-[15px] leading-[27px] mb-2">
+                                            Never trust your so called bestfriend, see what he did
+                                            <span class="text-[24px]">😱</span>
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VIDEO -->
+                                    <div class="w-full max-w-[300px] aspect-[9/15] 
+                                overflow-hidden
+                                rounded-[18px]
+                                border border-[#2f3336]
+                                bg-[#111]">
+
+                                        <video id="postVideo" class="w-full h-full object-cover" controls playsinline
+                                            preload="metadata">
+
+                                            <source src="videos/video (3).mp4" type="video/mp4">
+
+                                            Your browser does not support video.
+
+                                        </video>
+
+                                    </div>
+
+
+                                    <!-- ACTION BAR -->
+                                    <div class="flex items-center justify-between overflow-hidden
+                                w-full
+                                max-w-[600px]
+                                mt-2
+                                text-[13px]">
+
+                                        <!-- COMMENT -->
+                                        <button id="commentBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M1.75 10.5c0-4.83 4.59-8.75 10.25-8.75s10.25 3.92 10.25 8.75-4.59 8.75-10.25 8.75c-1.04 0-2.05-.13-2.99-.37L3 22l1.17-4.58C2.67 15.84 1.75 13.29 1.75 10.5z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="commentCount">184</span>
+
+                                        </button>
+
+
+                                        <!-- REPOST -->
+                                        <button id="repostBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#00ba7c]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#00ba7c]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M4.5 3.75A2.25 2.25 0 0 0 2.25 6v8.25h2V6a.25.25 0 0 1 .25-.25h12.67l-2.58 2.58 1.41 1.42L21 4.75 16 0l-1.41 1.41 2.58 2.59H4.5zM19.75 9.75v8.25a.25.25 0 0 1-.25.25H6.83l2.58-2.58L8 14.25l-5 5 5 4.75 1.41-1.41-2.58-2.59H19.5a2.25 2.25 0 0 0 2.25-2.25V9.75h-2z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="repostcount">694</span>
+
+                                        </button>
+
+
+                                        <!-- LIKE -->
+                                        <button id="likeBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#f91880]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#f91880]/10
+                                         transition">
+
+                                                <svg id="heartIcon" viewBox="0 0 24 24"
+                                                    class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="likeCount">9.1K</span>
+
+                                        </button>
+
+
+                                        <!-- VIEWS -->
+                                        <button class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                    stroke-width="1.8">
+
+                                                    <path d="M3 20V10" />
+                                                    <path d="M8 20V4" />
+                                                    <path d="M13 20v-7" />
+                                                    <path d="M18 20V7" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="viewCount">1.5M</span>
+
+                                        </button>
+
+
+                                        <!-- BOOKMARK -->
+                                        <button id="bookmarkBtn" class="group w-9 h-9 rounded-full 
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg id="bookmarkIcon" viewBox="0 0 24 24"
+                                                class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                <path
+                                                    d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75V22l-6-4-6 4V3.75z" />
+
+                                            </svg>
+
+                                        </button>
+
+
+                                        <!-- SHARE -->
+                                        <button id="shareBtn" class="group w-9 h-9 rounded-full
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                stroke-width="1.8">
+
+                                                <path d="M12 16V3" />
+                                                <path d="M7 8l5-5 5 5" />
+                                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </main>
+<main class="w-full flex justify-center border-b-2 border-t-2 border-[#2f3336]">
+                    <!-- POST -->
+                    <article class="w-full max-w-[680px] border-x border-[#2f3336] bg-black">
+
+                        <div class="px-3 sm:px-4 py-3">
+
+                            <div class="flex gap-3">
+
+                                <!-- PROFILE IMAGE -->
+                                <div class="shrink-0">
+                                    <img src="imag/download (4).png"
+                                        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover" alt="Profile">
+                                </div>
+
+                                <!-- POST CONTENT -->
+                                <div class="min-w-0 flex-1">
+
+                                    <!-- USER INFO -->
+                                    <div class="flex items-center justify-between">
+
+                                        <div class="flex items-center gap-1 min-w-0">
+
+                                            <!-- NAME -->
+                                            <span class="font-bold text-[15px] truncate">
+                                                @nofiltertalkss
+                                            </span>
+
+                                            <!-- VERIFIED -->
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-[#1d9bf0] shrink-0">
+                                                <path
+                                                    d="M22.25 12c0-1.43-1.45-2.44-1.96-3.67-.53-1.27-.28-3.03-1.27-4.02-.99-.99-2.75-.74-4.02-1.27C13.77 2.53 12.78 1.08 12 1.08s-1.77 1.45-3 1.96c-1.27.53-3.03.28-4.02 1.27-1 .99-.74 2.75-1.27 4.02C2.53 9.77 1.08 10.78 1.08 12s1.45 2.23 1.96 3.67c.53 1.27.28 3.03 1.27 4.02.99.99 2.75.74 4.02 1.27 1.23.51 2.24 1.96 3.67 1.96s2.44-1.45 3.67-1.96c1.27-.53 3.03-.28 4.02-1.27.99-.99.74-2.75 1.27-4.02.51-1.23 1.96-2.24 1.96-3.67zM10.1 16.6l-3.7-3.7 1.4-1.4 2.3 2.29 5.7-5.7 1.4 1.42-7.1 7.09z" />
+                                            </svg>
+
+                                            <!-- TIME -->
+                                            <span class="text-[#71767b] text-[14px] sm:text-[16px]">
+                                                · 3h
+                                            </span>
+
+                                        </div>
+
+                                        <!-- MORE -->
+                                        <button class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center
+                            text-[#71767b]
+                            hover:bg-[#1d9bf0]/10
+                            hover:text-[#1d9bf0]
+                            transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                                                <circle cx="5" cy="12" r="2" />
+                                                <circle cx="12" cy="12" r="2" />
+                                                <circle cx="19" cy="12" r="2" />
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+
+                                    <!-- POST TEXT -->
+                                    <div class="mt-[-2px]">
+
+                                        <p class="text-[15px] leading-[27px] mb-2">
+                                            Never trust your so called bestfriend, see what he did
+                                            <span class="text-[24px]">😱</span>
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VIDEO -->
+                                    <div class="w-full max-w-[300px] aspect-[9/15] 
+                                overflow-hidden
+                                rounded-[18px]
+                                border border-[#2f3336]
+                                bg-[#111]">
+
+                                        <video id="postVideo" class="w-full h-full object-cover" controls playsinline
+                                            preload="metadata">
+
+                                            <source src="videos/video (4).mp4" type="video/mp4">
+
+                                            Your browser does not support video.
+
+                                        </video>
+
+                                    </div>
+
+
+                                    <!-- ACTION BAR -->
+                                    <div class="flex items-center justify-between overflow-hidden
+                                w-full
+                                max-w-[600px]
+                                mt-2
+                                text-[13px]">
+
+                                        <!-- COMMENT -->
+                                        <button id="commentBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M1.75 10.5c0-4.83 4.59-8.75 10.25-8.75s10.25 3.92 10.25 8.75-4.59 8.75-10.25 8.75c-1.04 0-2.05-.13-2.99-.37L3 22l1.17-4.58C2.67 15.84 1.75 13.29 1.75 10.5z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="commentCount">184</span>
+
+                                        </button>
+
+
+                                        <!-- REPOST -->
+                                        <button id="repostBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#00ba7c]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#00ba7c]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M4.5 3.75A2.25 2.25 0 0 0 2.25 6v8.25h2V6a.25.25 0 0 1 .25-.25h12.67l-2.58 2.58 1.41 1.42L21 4.75 16 0l-1.41 1.41 2.58 2.59H4.5zM19.75 9.75v8.25a.25.25 0 0 1-.25.25H6.83l2.58-2.58L8 14.25l-5 5 5 4.75 1.41-1.41-2.58-2.59H19.5a2.25 2.25 0 0 0 2.25-2.25V9.75h-2z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="repostcount">694</span>
+
+                                        </button>
+
+
+                                        <!-- LIKE -->
+                                        <button id="likeBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#f91880]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#f91880]/10
+                                         transition">
+
+                                                <svg id="heartIcon" viewBox="0 0 24 24"
+                                                    class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="likeCount">9.1K</span>
+
+                                        </button>
+
+
+                                        <!-- VIEWS -->
+                                        <button class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                    stroke-width="1.8">
+
+                                                    <path d="M3 20V10" />
+                                                    <path d="M8 20V4" />
+                                                    <path d="M13 20v-7" />
+                                                    <path d="M18 20V7" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="viewCount">1.5M</span>
+
+                                        </button>
+
+
+                                        <!-- BOOKMARK -->
+                                        <button id="bookmarkBtn" class="group w-9 h-9 rounded-full 
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg id="bookmarkIcon" viewBox="0 0 24 24"
+                                                class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                <path
+                                                    d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75V22l-6-4-6 4V3.75z" />
+
+                                            </svg>
+
+                                        </button>
+
+
+                                        <!-- SHARE -->
+                                        <button id="shareBtn" class="group w-9 h-9 rounded-full
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                stroke-width="1.8">
+
+                                                <path d="M12 16V3" />
+                                                <path d="M7 8l5-5 5 5" />
+                                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </main>
+<main class="w-full flex justify-center border-b-2 border-t-2 border-[#2f3336]">
+                    <!-- POST -->
+                    <article class="w-full max-w-[680px] border-x border-[#2f3336] bg-black">
+
+                        <div class="px-3 sm:px-4 py-3">
+
+                            <div class="flex gap-3">
+
+                                <!-- PROFILE IMAGE -->
+                                <div class="shrink-0">
+                                    <img src="https://i.pravatar.cc/100?img=12"
+                                        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover" alt="Profile">
+                                </div>
+
+                                <!-- POST CONTENT -->
+                                <div class="min-w-0 flex-1">
+
+                                    <!-- USER INFO -->
+                                    <div class="flex items-center justify-between">
+
+                                        <div class="flex items-center gap-1 min-w-0">
+
+                                            <!-- NAME -->
+                                            <span class="font-bold text-[15px] truncate">
+                                                @nofiltertalkss
+                                            </span>
+
+                                            <!-- VERIFIED -->
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-[#1d9bf0] shrink-0">
+                                                <path
+                                                    d="M22.25 12c0-1.43-1.45-2.44-1.96-3.67-.53-1.27-.28-3.03-1.27-4.02-.99-.99-2.75-.74-4.02-1.27C13.77 2.53 12.78 1.08 12 1.08s-1.77 1.45-3 1.96c-1.27.53-3.03.28-4.02 1.27-1 .99-.74 2.75-1.27 4.02C2.53 9.77 1.08 10.78 1.08 12s1.45 2.23 1.96 3.67c.53 1.27.28 3.03 1.27 4.02.99.99 2.75.74 4.02 1.27 1.23.51 2.24 1.96 3.67 1.96s2.44-1.45 3.67-1.96c1.27-.53 3.03-.28 4.02-1.27.99-.99.74-2.75 1.27-4.02.51-1.23 1.96-2.24 1.96-3.67zM10.1 16.6l-3.7-3.7 1.4-1.4 2.3 2.29 5.7-5.7 1.4 1.42-7.1 7.09z" />
+                                            </svg>
+
+                                            <!-- TIME -->
+                                            <span class="text-[#71767b] text-[14px] sm:text-[16px]">
+                                                · 4h
+                                            </span>
+
+                                        </div>
+
+                                        <!-- MORE -->
+                                        <button class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center
+                            text-[#71767b]
+                            hover:bg-[#1d9bf0]/10
+                            hover:text-[#1d9bf0]
+                            transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                                                <circle cx="5" cy="12" r="2" />
+                                                <circle cx="12" cy="12" r="2" />
+                                                <circle cx="19" cy="12" r="2" />
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+
+                                    <!-- POST TEXT -->
+                                    <div class="mt-[-2px]">
+
+                                        <p class="text-[15px] leading-[27px] mb-2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis culpa
+                                            laboriosam, perspiciatis, dignissimos tempore aut nisi delectus cum incidunt
+                                            asperiores veniam natus quae! Nisi, officiis. Nostrum voluptatum illum
+                                            cupiditate! Debitis ratione eaque consequatur commodi exercitationem nam
+                                            quidem rerum doloribus eos facilis, laudantium et. Neque deleniti animi quo
+                                            officiis natus tempore ducimus molestias voluptates quis dicta. <span
+                                                class="text-[24px]">😱</span>
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VIDEO -->
+                                    <div class="w-full max-w-[300px] aspect-[9/15] 
+                                overflow-hidden
+                                rounded-[18px]
+                                border border-[#2f3336]
+                                bg-[#111]">
+
+                                        <video id="postVideo" class="w-full h-full object-cover" controls playsinline
+                                            preload="metadata">
+
+                                            <source src="videos/video.mp4" type="video/mp4">
+
+                                            Your browser does not support video.
+
+                                        </video>
+
+                                    </div>
+
+
+                                    <!-- ACTION BAR -->
+                                    <div class="flex items-center justify-between overflow-hidden
+                                w-full
+                                max-w-[600px]
+                                mt-2
+                                text-[13px]">
+
+                                        <!-- COMMENT -->
+                                        <button id="commentBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M1.75 10.5c0-4.83 4.59-8.75 10.25-8.75s10.25 3.92 10.25 8.75-4.59 8.75-10.25 8.75c-1.04 0-2.05-.13-2.99-.37L3 22l1.17-4.58C2.67 15.84 1.75 13.29 1.75 10.5z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="commentCount">184</span>
+
+                                        </button>
+
+
+                                        <!-- REPOST -->
+                                        <button id="repostBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#00ba7c]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#00ba7c]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M4.5 3.75A2.25 2.25 0 0 0 2.25 6v8.25h2V6a.25.25 0 0 1 .25-.25h12.67l-2.58 2.58 1.41 1.42L21 4.75 16 0l-1.41 1.41 2.58 2.59H4.5zM19.75 9.75v8.25a.25.25 0 0 1-.25.25H6.83l2.58-2.58L8 14.25l-5 5 5 4.75 1.41-1.41-2.58-2.59H19.5a2.25 2.25 0 0 0 2.25-2.25V9.75h-2z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="repostcount">694</span>
+
+                                        </button>
+
+
+                                        <!-- LIKE -->
+                                        <button id="likeBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#f91880]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#f91880]/10
+                                         transition">
+
+                                                <svg id="heartIcon" viewBox="0 0 24 24"
+                                                    class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="likeCount">9.1K</span>
+
+                                        </button>
+
+
+                                        <!-- VIEWS -->
+                                        <button class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                    stroke-width="1.8">
+
+                                                    <path d="M3 20V10" />
+                                                    <path d="M8 20V4" />
+                                                    <path d="M13 20v-7" />
+                                                    <path d="M18 20V7" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="viewCount">1.5M</span>
+
+                                        </button>
+
+
+                                        <!-- BOOKMARK -->
+                                        <button id="bookmarkBtn" class="group w-9 h-9 rounded-full 
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg id="bookmarkIcon" viewBox="0 0 24 24"
+                                                class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                <path
+                                                    d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75V22l-6-4-6 4V3.75z" />
+
+                                            </svg>
+
+                                        </button>
+
+
+                                        <!-- SHARE -->
+                                        <button id="shareBtn" class="group w-9 h-9 rounded-full
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                stroke-width="1.8">
+
+                                                <path d="M12 16V3" />
+                                                <path d="M7 8l5-5 5 5" />
+                                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </main>
+<main class="w-full flex justify-center border-b-2 border-t-2 border-[#2f3336]">
+                    <!-- POST -->
+                    <article class="w-full max-w-[680px] border-x border-[#2f3336] bg-black">
+
+                        <div class="px-3 sm:px-4 py-3">
+
+                            <div class="flex gap-3">
+
+                                <!-- PROFILE IMAGE -->
+                                <div class="shrink-0">
+                                    <img src="https://i.pravatar.cc/100?img=12"
+                                        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover" alt="Profile">
+                                </div>
+
+                                <!-- POST CONTENT -->
+                                <div class="min-w-0 flex-1">
+
+                                    <!-- USER INFO -->
+                                    <div class="flex items-center justify-between">
+
+                                        <div class="flex items-center gap-1 min-w-0">
+
+                                            <!-- NAME -->
+                                            <span class="font-bold text-[15px] truncate">
+                                                @nofiltertalkss
+                                            </span>
+
+                                            <!-- VERIFIED -->
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-[#1d9bf0] shrink-0">
+                                                <path
+                                                    d="M22.25 12c0-1.43-1.45-2.44-1.96-3.67-.53-1.27-.28-3.03-1.27-4.02-.99-.99-2.75-.74-4.02-1.27C13.77 2.53 12.78 1.08 12 1.08s-1.77 1.45-3 1.96c-1.27.53-3.03.28-4.02 1.27-1 .99-.74 2.75-1.27 4.02C2.53 9.77 1.08 10.78 1.08 12s1.45 2.23 1.96 3.67c.53 1.27.28 3.03 1.27 4.02.99.99 2.75.74 4.02 1.27 1.23.51 2.24 1.96 3.67 1.96s2.44-1.45 3.67-1.96c1.27-.53 3.03-.28 4.02-1.27.99-.99.74-2.75 1.27-4.02.51-1.23 1.96-2.24 1.96-3.67zM10.1 16.6l-3.7-3.7 1.4-1.4 2.3 2.29 5.7-5.7 1.4 1.42-7.1 7.09z" />
+                                            </svg>
+
+                                            <!-- TIME -->
+                                            <span class="text-[#71767b] text-[14px] sm:text-[16px]">
+                                                · 3h
+                                            </span>
+
+                                        </div>
+
+                                        <!-- MORE -->
+                                        <button class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center
+                            text-[#71767b]
+                            hover:bg-[#1d9bf0]/10
+                            hover:text-[#1d9bf0]
+                            transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                                                <circle cx="5" cy="12" r="2" />
+                                                <circle cx="12" cy="12" r="2" />
+                                                <circle cx="19" cy="12" r="2" />
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+
+                                    <!-- POST TEXT -->
+                                    <div class="mt-[-2px]">
+
+                                        <p class="text-[15px] leading-[27px] mb-2">
+                                            Never trust your so called bestfriend, see what he did
+                                            <span class="text-[24px]">😱</span>
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VIDEO -->
+                                    <div class="w-full max-w-[300px] aspect-[9/15] 
+                                overflow-hidden
+                                rounded-[18px]
+                                border border-[#2f3336]
+                                bg-[#111]">
+
+                                        <video id="postVideo" class="w-full h-full object-cover" controls playsinline
+                                            preload="metadata">
+
+                                            <source src="videos/video (5).mp4" type="video/mp4">
+
+                                            Your browser does not support video.
+
+                                        </video>
+
+                                    </div>
+
+
+                                    <!-- ACTION BAR -->
+                                    <div class="flex items-center justify-between overflow-hidden
+                                w-full
+                                max-w-[600px]
+                                mt-2
+                                text-[13px]">
+
+                                        <!-- COMMENT -->
+                                        <button id="commentBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M1.75 10.5c0-4.83 4.59-8.75 10.25-8.75s10.25 3.92 10.25 8.75-4.59 8.75-10.25 8.75c-1.04 0-2.05-.13-2.99-.37L3 22l1.17-4.58C2.67 15.84 1.75 13.29 1.75 10.5z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="commentCount">184</span>
+
+                                        </button>
+
+
+                                        <!-- REPOST -->
+                                        <button id="repostBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#00ba7c]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#00ba7c]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M4.5 3.75A2.25 2.25 0 0 0 2.25 6v8.25h2V6a.25.25 0 0 1 .25-.25h12.67l-2.58 2.58 1.41 1.42L21 4.75 16 0l-1.41 1.41 2.58 2.59H4.5zM19.75 9.75v8.25a.25.25 0 0 1-.25.25H6.83l2.58-2.58L8 14.25l-5 5 5 4.75 1.41-1.41-2.58-2.59H19.5a2.25 2.25 0 0 0 2.25-2.25V9.75h-2z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="repostcount">694</span>
+
+                                        </button>
+
+
+                                        <!-- LIKE -->
+                                        <button id="likeBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#f91880]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#f91880]/10
+                                         transition">
+
+                                                <svg id="heartIcon" viewBox="0 0 24 24"
+                                                    class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="likeCount">9.1K</span>
+
+                                        </button>
+
+
+                                        <!-- VIEWS -->
+                                        <button class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                    stroke-width="1.8">
+
+                                                    <path d="M3 20V10" />
+                                                    <path d="M8 20V4" />
+                                                    <path d="M13 20v-7" />
+                                                    <path d="M18 20V7" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="viewCount">1.5M</span>
+
+                                        </button>
+
+
+                                        <!-- BOOKMARK -->
+                                        <button id="bookmarkBtn" class="group w-9 h-9 rounded-full 
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg id="bookmarkIcon" viewBox="0 0 24 24"
+                                                class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                <path
+                                                    d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75V22l-6-4-6 4V3.75z" />
+
+                                            </svg>
+
+                                        </button>
+
+
+                                        <!-- SHARE -->
+                                        <button id="shareBtn" class="group w-9 h-9 rounded-full
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                stroke-width="1.8">
+
+                                                <path d="M12 16V3" />
+                                                <path d="M7 8l5-5 5 5" />
+                                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </main>
+<main class="w-full flex justify-center border-b-2 border-t-2 border-[#2f3336]">
+                    <!-- POST -->
+                    <article class="w-full max-w-[680px] border-x border-[#2f3336] bg-black">
+
+                        <div class="px-3 sm:px-4 py-3">
+
+                            <div class="flex gap-3">
+
+                                <!-- PROFILE IMAGE -->
+                                <div class="shrink-0">
+                                    <img src="https://i.pravatar.cc/100?img=12"
+                                        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover" alt="Profile">
+                                </div>
+
+                                <!-- POST CONTENT -->
+                                <div class="min-w-0 flex-1">
+
+                                    <!-- USER INFO -->
+                                    <div class="flex items-center justify-between">
+
+                                        <div class="flex items-center gap-1 min-w-0">
+
+                                            <!-- NAME -->
+                                            <span class="font-bold text-[15px] truncate">
+                                                @nofiltertalkss
+                                            </span>
+
+                                            <!-- VERIFIED -->
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-[#1d9bf0] shrink-0">
+                                                <path
+                                                    d="M22.25 12c0-1.43-1.45-2.44-1.96-3.67-.53-1.27-.28-3.03-1.27-4.02-.99-.99-2.75-.74-4.02-1.27C13.77 2.53 12.78 1.08 12 1.08s-1.77 1.45-3 1.96c-1.27.53-3.03.28-4.02 1.27-1 .99-.74 2.75-1.27 4.02C2.53 9.77 1.08 10.78 1.08 12s1.45 2.23 1.96 3.67c.53 1.27.28 3.03 1.27 4.02.99.99 2.75.74 4.02 1.27 1.23.51 2.24 1.96 3.67 1.96s2.44-1.45 3.67-1.96c1.27-.53 3.03-.28 4.02-1.27.99-.99.74-2.75 1.27-4.02.51-1.23 1.96-2.24 1.96-3.67zM10.1 16.6l-3.7-3.7 1.4-1.4 2.3 2.29 5.7-5.7 1.4 1.42-7.1 7.09z" />
+                                            </svg>
+
+                                            <!-- TIME -->
+                                            <span class="text-[#71767b] text-[14px] sm:text-[16px]">
+                                                · 3h
+                                            </span>
+
+                                        </div>
+
+                                        <!-- MORE -->
+                                        <button class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center
+                            text-[#71767b]
+                            hover:bg-[#1d9bf0]/10
+                            hover:text-[#1d9bf0]
+                            transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                                                <circle cx="5" cy="12" r="2" />
+                                                <circle cx="12" cy="12" r="2" />
+                                                <circle cx="19" cy="12" r="2" />
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+
+                                    <!-- POST TEXT -->
+                                    <div class="mt-[-2px]">
+
+                                        <p class="text-[15px] leading-[27px] mb-2">
+                                            Never trust your so called bestfriend, see what he did
+                                            <span class="text-[24px]">😱</span>
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VIDEO -->
+                                    <div class="w-full max-w-[300px] aspect-[9/15] 
+                                overflow-hidden
+                                rounded-[18px]
+                                border border-[#2f3336]
+                                bg-[#111]">
+
+                                        <video id="postVideo" class="w-full h-full object-cover" controls playsinline
+                                            preload="metadata">
+
+                                            <source src="videos/uRLzjuDaFttfmM9K.mp4" type="video/mp4">
+
+                                            Your browser does not support video.
+
+                                        </video>
+
+                                    </div>
+
+
+                                    <!-- ACTION BAR -->
+                                    <div class="flex items-center justify-between overflow-hidden
+                                w-full
+                                max-w-[600px]
+                                mt-2
+                                text-[13px]">
+
+                                        <!-- COMMENT -->
+                                        <button id="commentBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M1.75 10.5c0-4.83 4.59-8.75 10.25-8.75s10.25 3.92 10.25 8.75-4.59 8.75-10.25 8.75c-1.04 0-2.05-.13-2.99-.37L3 22l1.17-4.58C2.67 15.84 1.75 13.29 1.75 10.5z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="commentCount">184</span>
+
+                                        </button>
+
+
+                                        <!-- REPOST -->
+                                        <button id="repostBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#00ba7c]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#00ba7c]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M4.5 3.75A2.25 2.25 0 0 0 2.25 6v8.25h2V6a.25.25 0 0 1 .25-.25h12.67l-2.58 2.58 1.41 1.42L21 4.75 16 0l-1.41 1.41 2.58 2.59H4.5zM19.75 9.75v8.25a.25.25 0 0 1-.25.25H6.83l2.58-2.58L8 14.25l-5 5 5 4.75 1.41-1.41-2.58-2.59H19.5a2.25 2.25 0 0 0 2.25-2.25V9.75h-2z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="repostcount">694</span>
+
+                                        </button>
+
+
+                                        <!-- LIKE -->
+                                        <button id="likeBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#f91880]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#f91880]/10
+                                         transition">
+
+                                                <svg id="heartIcon" viewBox="0 0 24 24"
+                                                    class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="likeCount">9.1K</span>
+
+                                        </button>
+
+
+                                        <!-- VIEWS -->
+                                        <button class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                    stroke-width="1.8">
+
+                                                    <path d="M3 20V10" />
+                                                    <path d="M8 20V4" />
+                                                    <path d="M13 20v-7" />
+                                                    <path d="M18 20V7" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="viewCount">1.5M</span>
+
+                                        </button>
+
+
+                                        <!-- BOOKMARK -->
+                                        <button id="bookmarkBtn" class="group w-9 h-9 rounded-full 
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg id="bookmarkIcon" viewBox="0 0 24 24"
+                                                class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                <path
+                                                    d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75V22l-6-4-6 4V3.75z" />
+
+                                            </svg>
+
+                                        </button>
+
+
+                                        <!-- SHARE -->
+                                        <button id="shareBtn" class="group w-9 h-9 rounded-full
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                stroke-width="1.8">
+
+                                                <path d="M12 16V3" />
+                                                <path d="M7 8l5-5 5 5" />
+                                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </main>
+<main class="w-full flex justify-center border-b-2 border-t-2 border-[#2f3336]">
+                    <!-- POST -->
+                    <article class="w-full max-w-[680px] border-x border-[#2f3336] bg-black">
+
+                        <div class="px-3 sm:px-4 py-3">
+
+                            <div class="flex gap-3">
+
+                                <!-- PROFILE IMAGE -->
+                                <div class="shrink-0">
+                                    <img src="https://i.pravatar.cc/100?img=12"
+                                        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover" alt="Profile">
+                                </div>
+
+                                <!-- POST CONTENT -->
+                                <div class="min-w-0 flex-1">
+
+                                    <!-- USER INFO -->
+                                    <div class="flex items-center justify-between">
+
+                                        <div class="flex items-center gap-1 min-w-0">
+
+                                            <!-- NAME -->
+                                            <span class="font-bold text-[15px] truncate">
+                                                @nofiltertalkss
+                                            </span>
+
+                                            <!-- VERIFIED -->
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-[#1d9bf0] shrink-0">
+                                                <path
+                                                    d="M22.25 12c0-1.43-1.45-2.44-1.96-3.67-.53-1.27-.28-3.03-1.27-4.02-.99-.99-2.75-.74-4.02-1.27C13.77 2.53 12.78 1.08 12 1.08s-1.77 1.45-3 1.96c-1.27.53-3.03.28-4.02 1.27-1 .99-.74 2.75-1.27 4.02C2.53 9.77 1.08 10.78 1.08 12s1.45 2.23 1.96 3.67c.53 1.27.28 3.03 1.27 4.02.99.99 2.75.74 4.02 1.27 1.23.51 2.24 1.96 3.67 1.96s2.44-1.45 3.67-1.96c1.27-.53 3.03-.28 4.02-1.27.99-.99.74-2.75 1.27-4.02.51-1.23 1.96-2.24 1.96-3.67zM10.1 16.6l-3.7-3.7 1.4-1.4 2.3 2.29 5.7-5.7 1.4 1.42-7.1 7.09z" />
+                                            </svg>
+
+                                            <!-- TIME -->
+                                            <span class="text-[#71767b] text-[14px] sm:text-[16px]">
+                                                · 3h
+                                            </span>
+
+                                        </div>
+
+                                        <!-- MORE -->
+                                        <button class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center
+                            text-[#71767b]
+                            hover:bg-[#1d9bf0]/10
+                            hover:text-[#1d9bf0]
+                            transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                                                <circle cx="5" cy="12" r="2" />
+                                                <circle cx="12" cy="12" r="2" />
+                                                <circle cx="19" cy="12" r="2" />
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+
+                                    <!-- POST TEXT -->
+                                    <div class="mt-[-2px]">
+
+                                        <p class="text-[15px] leading-[27px] mb-2">
+                                            Never trust your so called bestfriend, see what he did
+                                            <span class="text-[24px]">😱</span>
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VIDEO -->
+                                    <div class="w-full max-w-[300px] aspect-[9/15] 
+                                overflow-hidden
+                                rounded-[18px]
+                                border border-[#2f3336]
+                                bg-[#111]">
+
+                                        <video id="postVideo" class="w-full h-full object-cover" controls playsinline
+                                            preload="metadata">
+
+                                            <source src="videos/video (6).mp4" type="video/mp4">
+
+                                            Your browser does not support video.
+
+                                        </video>
+
+                                    </div>
+
+
+                                    <!-- ACTION BAR -->
+                                    <div class="flex items-center justify-between overflow-hidden
+                                w-full
+                                max-w-[600px]
+                                mt-2
+                                text-[13px]">
+
+                                        <!-- COMMENT -->
+                                        <button id="commentBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M1.75 10.5c0-4.83 4.59-8.75 10.25-8.75s10.25 3.92 10.25 8.75-4.59 8.75-10.25 8.75c-1.04 0-2.05-.13-2.99-.37L3 22l1.17-4.58C2.67 15.84 1.75 13.29 1.75 10.5z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="commentCount">184</span>
+
+                                        </button>
+
+
+                                        <!-- REPOST -->
+                                        <button id="repostBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#00ba7c]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#00ba7c]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M4.5 3.75A2.25 2.25 0 0 0 2.25 6v8.25h2V6a.25.25 0 0 1 .25-.25h12.67l-2.58 2.58 1.41 1.42L21 4.75 16 0l-1.41 1.41 2.58 2.59H4.5zM19.75 9.75v8.25a.25.25 0 0 1-.25.25H6.83l2.58-2.58L8 14.25l-5 5 5 4.75 1.41-1.41-2.58-2.59H19.5a2.25 2.25 0 0 0 2.25-2.25V9.75h-2z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="repostcount">694</span>
+
+                                        </button>
+
+
+                                        <!-- LIKE -->
+                                        <button id="likeBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#f91880]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#f91880]/10
+                                         transition">
+
+                                                <svg id="heartIcon" viewBox="0 0 24 24"
+                                                    class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="likeCount">9.1K</span>
+
+                                        </button>
+
+
+                                        <!-- VIEWS -->
+                                        <button class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                    stroke-width="1.8">
+
+                                                    <path d="M3 20V10" />
+                                                    <path d="M8 20V4" />
+                                                    <path d="M13 20v-7" />
+                                                    <path d="M18 20V7" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="viewCount">1.5M</span>
+
+                                        </button>
+
+
+                                        <!-- BOOKMARK -->
+                                        <button id="bookmarkBtn" class="group w-9 h-9 rounded-full 
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg id="bookmarkIcon" viewBox="0 0 24 24"
+                                                class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                <path
+                                                    d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75V22l-6-4-6 4V3.75z" />
+
+                                            </svg>
+
+                                        </button>
+
+
+                                        <!-- SHARE -->
+                                        <button id="shareBtn" class="group w-9 h-9 rounded-full
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                stroke-width="1.8">
+
+                                                <path d="M12 16V3" />
+                                                <path d="M7 8l5-5 5 5" />
+                                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </main>
+
+
+                
+<main class="w-full flex justify-center border-b-2 border-t-2 border-[#2f3336]">
+                    <!-- POST -->
+                    <article class="w-full max-w-[680px] border-x border-[#2f3336] bg-black">
+
+                        <div class="px-3 sm:px-4 py-3">
+
+                            <div class="flex gap-3">
+
+                                <!-- PROFILE IMAGE -->
+                                <div class="shrink-0">
+                                    <img src="https://i.pravatar.cc/100?img=12"
+                                        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover" alt="Profile">
+                                </div>
+
+                                <!-- POST CONTENT -->
+                                <div class="min-w-0 flex-1">
+
+                                    <!-- USER INFO -->
+                                    <div class="flex items-center justify-between">
+
+                                        <div class="flex items-center gap-1 min-w-0">
+
+                                            <!-- NAME -->
+                                            <span class="font-bold text-[15px] truncate">
+                                                @nofiltertalkss
+                                            </span>
+
+                                            <!-- VERIFIED -->
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-[#1d9bf0] shrink-0">
+                                                <path
+                                                    d="M22.25 12c0-1.43-1.45-2.44-1.96-3.67-.53-1.27-.28-3.03-1.27-4.02-.99-.99-2.75-.74-4.02-1.27C13.77 2.53 12.78 1.08 12 1.08s-1.77 1.45-3 1.96c-1.27.53-3.03.28-4.02 1.27-1 .99-.74 2.75-1.27 4.02C2.53 9.77 1.08 10.78 1.08 12s1.45 2.23 1.96 3.67c.53 1.27.28 3.03 1.27 4.02.99.99 2.75.74 4.02 1.27 1.23.51 2.24 1.96 3.67 1.96s2.44-1.45 3.67-1.96c1.27-.53 3.03-.28 4.02-1.27.99-.99.74-2.75 1.27-4.02.51-1.23 1.96-2.24 1.96-3.67zM10.1 16.6l-3.7-3.7 1.4-1.4 2.3 2.29 5.7-5.7 1.4 1.42-7.1 7.09z" />
+                                            </svg>
+
+                                            <!-- TIME -->
+                                            <span class="text-[#71767b] text-[14px] sm:text-[16px]">
+                                                · 3h
+                                            </span>
+
+                                        </div>
+
+                                        <!-- MORE -->
+                                        <button class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center
+                            text-[#71767b]
+                            hover:bg-[#1d9bf0]/10
+                            hover:text-[#1d9bf0]
+                            transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                                                <circle cx="5" cy="12" r="2" />
+                                                <circle cx="12" cy="12" r="2" />
+                                                <circle cx="19" cy="12" r="2" />
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+
+                                    <!-- POST TEXT -->
+                                    <div class="mt-[-2px]">
+
+                                        <p class="text-[15px] leading-[27px] mb-2">
+                                            Never trust your so called bestfriend, see what he did
+                                            <span class="text-[24px]">😱</span>
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VIDEO -->
+                                    <div class="w-full max-w-[300px] aspect-[9/15] 
+                                overflow-hidden
+                                rounded-[18px]
+                                border border-[#2f3336]
+                                bg-[#111]">
+
+                                        <video id="postVideo" class="w-full h-full object-cover" controls playsinline
+                                            preload="metadata">
+
+                                            <source src="video (3).mp4" type="video/mp4">
+
+                                            Your browser does not support video.
+
+                                        </video>
+
+                                    </div>
+
+
+                                    <!-- ACTION BAR -->
+                                    <div class="flex items-center justify-between overflow-hidden
+                                w-full
+                                max-w-[600px]
+                                mt-2
+                                text-[13px]">
+
+                                        <!-- COMMENT -->
+                                        <button id="commentBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M1.75 10.5c0-4.83 4.59-8.75 10.25-8.75s10.25 3.92 10.25 8.75-4.59 8.75-10.25 8.75c-1.04 0-2.05-.13-2.99-.37L3 22l1.17-4.58C2.67 15.84 1.75 13.29 1.75 10.5z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="commentCount">184</span>
+
+                                        </button>
+
+
+                                        <!-- REPOST -->
+                                        <button id="repostBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#00ba7c]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#00ba7c]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M4.5 3.75A2.25 2.25 0 0 0 2.25 6v8.25h2V6a.25.25 0 0 1 .25-.25h12.67l-2.58 2.58 1.41 1.42L21 4.75 16 0l-1.41 1.41 2.58 2.59H4.5zM19.75 9.75v8.25a.25.25 0 0 1-.25.25H6.83l2.58-2.58L8 14.25l-5 5 5 4.75 1.41-1.41-2.58-2.59H19.5a2.25 2.25 0 0 0 2.25-2.25V9.75h-2z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="repostcount">694</span>
+
+                                        </button>
+
+
+                                        <!-- LIKE -->
+                                        <button id="likeBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#f91880]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#f91880]/10
+                                         transition">
+
+                                                <svg id="heartIcon" viewBox="0 0 24 24"
+                                                    class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="likeCount">9.1K</span>
+
+                                        </button>
+
+
+                                        <!-- VIEWS -->
+                                        <button class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                    stroke-width="1.8">
+
+                                                    <path d="M3 20V10" />
+                                                    <path d="M8 20V4" />
+                                                    <path d="M13 20v-7" />
+                                                    <path d="M18 20V7" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="viewCount">1.5M</span>
+
+                                        </button>
+
+
+                                        <!-- BOOKMARK -->
+                                        <button id="bookmarkBtn" class="group w-9 h-9 rounded-full 
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg id="bookmarkIcon" viewBox="0 0 24 24"
+                                                class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                <path
+                                                    d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75V22l-6-4-6 4V3.75z" />
+
+                                            </svg>
+
+                                        </button>
+
+
+                                        <!-- SHARE -->
+                                        <button id="shareBtn" class="group w-9 h-9 rounded-full
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                stroke-width="1.8">
+
+                                                <path d="M12 16V3" />
+                                                <path d="M7 8l5-5 5 5" />
+                                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </main>
+<main class="w-full flex justify-center border-b-2 border-t-2 border-[#2f3336]">
+                    <!-- POST -->
+                    <article class="w-full max-w-[680px] border-x border-[#2f3336] bg-black">
+
+                        <div class="px-3 sm:px-4 py-3">
+
+                            <div class="flex gap-3">
+
+                                <!-- PROFILE IMAGE -->
+                                <div class="shrink-0">
+                                    <img src="imag/download (6).png"
+                                        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover" alt="Profile">
+                                </div>
+
+                                <!-- POST CONTENT -->
+                                <div class="min-w-0 flex-1">
+
+                                    <!-- USER INFO -->
+                                    <div class="flex items-center justify-between">
+
+                                        <div class="flex items-center gap-1 min-w-0">
+
+                                            <!-- NAME -->
+                                            <span class="font-bold text-[15px] truncate">
+                                                @goodgirel
+                                            </span>
+
+                                            <!-- VERIFIED -->
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-[#1d9bf0] shrink-0">
+                                                <path
+                                                    d="M22.25 12c0-1.43-1.45-2.44-1.96-3.67-.53-1.27-.28-3.03-1.27-4.02-.99-.99-2.75-.74-4.02-1.27C13.77 2.53 12.78 1.08 12 1.08s-1.77 1.45-3 1.96c-1.27.53-3.03.28-4.02 1.27-1 .99-.74 2.75-1.27 4.02C2.53 9.77 1.08 10.78 1.08 12s1.45 2.23 1.96 3.67c.53 1.27.28 3.03 1.27 4.02.99.99 2.75.74 4.02 1.27 1.23.51 2.24 1.96 3.67 1.96s2.44-1.45 3.67-1.96c1.27-.53 3.03-.28 4.02-1.27.99-.99.74-2.75 1.27-4.02.51-1.23 1.96-2.24 1.96-3.67zM10.1 16.6l-3.7-3.7 1.4-1.4 2.3 2.29 5.7-5.7 1.4 1.42-7.1 7.09z" />
+                                            </svg>
+
+                                            <!-- TIME -->
+                                            <span class="text-[#71767b] text-[14px] sm:text-[16px]">
+                                                · 7h
+                                            </span>
+
+                                        </div>
+
+                                        <!-- MORE -->
+                                        <button class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center
+                            text-[#71767b]
+                            hover:bg-[#1d9bf0]/10
+                            hover:text-[#1d9bf0]
+                            transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+                                                <circle cx="5" cy="12" r="2" />
+                                                <circle cx="12" cy="12" r="2" />
+                                                <circle cx="19" cy="12" r="2" />
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+
+                                    <!-- POST TEXT -->
+                                    <div class="mt-[-2px]">
+
+                                        <p class="text-[15px] leading-[27px] mb-2">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur deleniti
+                                            beatae aliquid, iusto dolorum aperiam vitae asperiores corrupti quis
+                                            praesentium amet saepe?
+                                            <span class="text-[24px]">😱</span>
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VIDEO -->
+                                    <div class="w-full max-w-[300px] aspect-[9/15] 
+                                overflow-hidden
+                                rounded-[18px]
+                                border border-[#2f3336]
+                                bg-[#111]">
+
+                                        <video id="postVideo" class="w-full h-full object-cover" controls playsinline
+                                            preload="metadata">
+
+                                            <source src="videos/video (2).mp4" type=" video/mp4">
+
+                                            Your browser does not support video.
+
+                                        </video>
+
+                                    </div>
+
+
+                                    <!-- ACTION BAR -->
+                                    <div class="flex items-center justify-between overflow-hidden
+                                w-full
+                                max-w-[600px]
+                                mt-2
+                                text-[13px]">
+
+                                        <!-- COMMENT -->
+                                        <button id="commentBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M1.75 10.5c0-4.83 4.59-8.75 10.25-8.75s10.25 3.92 10.25 8.75-4.59 8.75-10.25 8.75c-1.04 0-2.05-.13-2.99-.37L3 22l1.17-4.58C2.67 15.84 1.75 13.29 1.75 10.5z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="commentCount">184</span>
+
+                                        </button>
+
+
+                                        <!-- REPOST -->
+                                        <button id="repostBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#00ba7c]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#00ba7c]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+
+                                                    <path
+                                                        d="M4.5 3.75A2.25 2.25 0 0 0 2.25 6v8.25h2V6a.25.25 0 0 1 .25-.25h12.67l-2.58 2.58 1.41 1.42L21 4.75 16 0l-1.41 1.41 2.58 2.59H4.5zM19.75 9.75v8.25a.25.25 0 0 1-.25.25H6.83l2.58-2.58L8 14.25l-5 5 5 4.75 1.41-1.41-2.58-2.59H19.5a2.25 2.25 0 0 0 2.25-2.25V9.75h-2z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="repostcount">694</span>
+
+                                        </button>
+
+
+                                        <!-- LIKE -->
+                                        <button id="likeBtn" class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#f91880]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#f91880]/10
+                                         transition">
+
+                                                <svg id="heartIcon" viewBox="0 0 24 24"
+                                                    class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="likeCount">9.1K</span>
+
+                                        </button>
+
+
+                                        <!-- VIEWS -->
+                                        <button class="group flex items-center gap-1
+                                   rounded-full p-1
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   transition">
+
+                                            <span class="w-8 h-8 rounded-full
+                                         flex items-center justify-center
+                                         group-hover:bg-[#1d9bf0]/10
+                                         transition">
+
+                                                <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                    stroke-width="1.8">
+
+                                                    <path d="M3 20V10" />
+                                                    <path d="M8 20V4" />
+                                                    <path d="M13 20v-7" />
+                                                    <path d="M18 20V7" />
+
+                                                </svg>
+
+                                            </span>
+
+                                            <span id="viewCount">1.5M</span>
+
+                                        </button>
+
+
+                                        <!-- BOOKMARK -->
+                                        <button id="bookmarkBtn" class="group w-9 h-9 rounded-full 
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg id="bookmarkIcon" viewBox="0 0 24 24"
+                                                class="w-5 h-5 fill-none stroke-current" stroke-width="1.8">
+
+                                                <path
+                                                    d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75V22l-6-4-6 4V3.75z" />
+
+                                            </svg>
+
+                                        </button>
+
+
+                                        <!-- SHARE -->
+                                        <button id="shareBtn" class="group w-9 h-9 rounded-full
+                                   flex items-center justify-center
+                                   text-[#71767b]
+                                   hover:text-[#1d9bf0]
+                                   hover:bg-[#1d9bf0]/10
+                                   transition">
+
+                                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-none stroke-current"
+                                                stroke-width="1.8">
+
+                                                <path d="M12 16V3" />
+                                                <path d="M7 8l5-5 5 5" />
+                                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </main>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="third h-screen overflow-y-auto sticky top-0 w-[794px] hidden md:flex flex-col items-center">
+
+
+            <!-- Search Bar -->
+            <div
+                class="flex items-center sticky top-0 z-20 w-[350px] h-[44px] m-2 px-4 gap-3 rounded-full bg-black border border-[#333639] focus-within:border-blue-500">
+
+                <!-- Search Icon -->
+                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="m20 20-4-4"></path>
+                </svg>
+
+                <!-- Search Input -->
+                <input type="text" placeholder="Search"
+                    class="w-full bg-transparent outline-none text-white placeholder-gray-500 text-[15px]">
+            </div>
+
+
+            <div class=" w-[334px]   border mt-[20px] border-[#2f3336] rounded-[24px] bg-black p-5">
+                <h2 class="text-white text-[20px] font-bold mt-[-10px]">
+                    Subscribe to Premium
+                </h2>
+                <p class="text-white text-[14px] leading-[1.4] mt-2">
+                    Get rid of ads, see your analytics, boost your
+                    replies and unlock 20+ features.
+                </p>
+                <button
+                    class="bg-[#1d9bf0] hover:bg-[#1a8cd8] text-white text-[13px] font-bold px-6 h-10 py-3 rounded-full mt-4 transition">
+                    Subscribe
+                </button>
+            </div>
+
+
+            <!-- Today's News Card -->
+            <div
+                class="relative mt-3 w-[330px] h-[392px] rounded-[24px] border border-[#2f3336] bg-black text-white px-6 pt-7 overflow-hidden">
+                <!-- Header -->
+                <div class="flex items-center justify-between mb-12">
+                    <h2 class="text-[25px] font-extrabold tracking-tight">
+                        Today’s News
+                    </h2>
+
+                    <!-- Close X -->
+                    <button
+                        class="w-8 h-8 flex items-center justify-center text-[#e7e9ea] hover:bg-[#181818] rounded-full">
+                        <svg viewBox="0 0 24 24" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 6l12 12M18 6L6 18" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- News 1 -->
+                <div class="mb-14">
+                    <h3 class="text-[13px] leading-[1.18] mt-[-20px]  font-bold text-[#e7e9ea]">
+                        Jamaat-e-Islami Holds Sit-Ins in Pakistan's
+                        Four Provincial Capitals Against Petroleum...
+                    </h3>
+
+                    <div class="flex items-center mt-3">
+                        <!-- Avatars -->
+                        <div class="flex -space-x-2 mr-3">
+                            <img src="https://i.pravatar.cc/48?img=12"
+                                class="w-7 h-7 rounded-full border-2 border-black object-cover" />
+                            <img src="https://i.pravatar.cc/48?img=32"
+                                class="w-7 h-7 rounded-full border-2 border-black object-cover" />
+                            <img src="https://i.pravatar.cc/48?img=47"
+                                class="w-7 h-7 rounded-full border-2 border-black object-cover" />
+                        </div>
+
+                        <span class="text-[12px] text-[#71767b]">
+                            1 day ago · News · 7,066 posts
+                        </span>
+                    </div>
+                </div>
+
+                <!-- News 2 -->
+                <div class="mb-14">
+                    <h3 class="text-[13px] leading-[1.18] mt-[-20px]  font-bold text-[#e7e9ea]">
+                        Pakistan Test Squad Arrives in Leeds for
+                        England Series Opener
+                    </h3>
+
+                    <div class="flex items-center mt-3">
+                        <!-- Avatars -->
+                        <div class="flex -space-x-2 mr-3">
+                            <img src="https://i.pravatar.cc/48?img=11"
+                                class="w-7 h-7 rounded-full border-2 border-black object-cover" />
+                            <img src="https://i.pravatar.cc/48?img=53"
+                                class="w-7 h-7 rounded-full border-2 border-black object-cover" />
+                            <img src="https://i.pravatar.cc/48?img=68"
+                                class="w-7 h-7 rounded-full border-2 border-black object-cover" />
+                        </div>
+
+                        <span class="text-[12px] text-[#71767b]">
+                            Trending now · Sports · 78 posts
+                        </span>
+                    </div>
+                </div>
+
+                <!-- News 3 -->
+                <div>
+                    <h3 class="text-[13px] leading-[1.18] mt-[-20px] font-bold text-[#e7e9ea]">
+                        Pakistanis Rally Online Behind Field Marshal
+                        Asim Munir as National Hero
+                    </h3>
+
+                    <div class="flex items-center mt-3">
+                        <!-- Avatars -->
+                        <div class="flex -space-x-2 mr-3">
+                            <img src="https://i.pravatar.cc/48?img=5"
+                                class="w-7 h-7 rounded-full border-2 border-black object-cover" />
+                            <img src="https://i.pravatar.cc/48?img=45"
+                                class="w-7 h-7 rounded-full border-2 border-black object-cover" />
+                            <img src="https://i.pravatar.cc/48?img=15"
+                                class="w-7 h-7 rounded-full border-2 border-black object-cover" />
+                        </div>
+
+                        <span class="text-[12px] text-[#71767b]">
+                            2 days ago · News · 8,207 posts
+                        </span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div
+                class="w-[330px] rounded-[24px] border border-[#2f3336] bg-black text-white px-6 pt-5 mt-3.5 gap-3 pb-6">
+                <!-- Heading -->
+                <h2 class="text-[20px] font-extrabold tracking-tight mb-5">
+                    What’s happening
+                </h2>
+
+                <!-- Trend 1 -->
+                <div class="relative mb-3">
+                    <p class="text-[15px] text-[#71767b]">
+                        Trending in Pakistan
+                    </p>
+
+                    <h3 class="text-[15px] font-bold mt-1">
+                        #Bannu
+                    </h3>
+
+                    <button class="absolute right-0 top-0 text-[#71767b] text-[22px] leading-none">
+                        ···
+                    </button>
+                </div>
+
+                <!-- Trend 2 -->
+                <div class="relative mb-3">
+                    <p class="text-[14px] text-[#71767b]">
+                        Trending in Pakistan
+                    </p>
+
+                    <h3 class="text-[15px] font-bold mt-1">
+                        $ats
+                    </h3>
+
+                    <button class="absolute right-0 top-0 text-[#71767b] text-[22px] leading-none">
+                        ···
+                    </button>
+                </div>
+
+                <!-- Trend 3 -->
+                <div class="relative mb-3">
+                    <p class="text-[15px] text-[#71767b]">
+                        Only on X · Trending
+                    </p>
+
+                    <h3 class="text-[15px] font-bold mt-1">
+                        #JIDharnaAgainstBhattaLevy
+                    </h3>
+
+                    <button class="absolute right-0 top-0 text-[#71767b] text-[22px] leading-none">
+                        ···
+                    </button>
+                </div>
+
+                <!-- Trend 4 -->
+                <div class="relative mb-3">
+                    <p class="text-[15px] text-[#71767b]">
+                        Trending in Pakistan
+                    </p>
+
+                    <h3 class="text-[15px] font-bold mt-1 text-right" dir="rtl">
+                        #عوام_کی_آواز_عوام_راج
+                    </h3>
+
+                    <button class="absolute right-0 top-0 text-[#71767b] text-[22px] leading-none">
+                        ···
+                    </button>
+                </div>
+
+                <!-- Show more -->
+                <button class="text-[#1d9bf0] text-[17px] hover:underline">
+                    Show more
+                </button>
+            </div>
+            <ul class="flex flex-wrap gap-2 w-[310px] text-[13px] text-[#71767b] mt-3">
+                <li><a href="#" class="hover:underline">Privacy</a></li>
+                <li><a href="#" class="hover:underline"> Terms</a></li>
+                <li><a href="#" class="hover:underline"> Cookies</a></li>
+                <li><a href="#" class="hover:underline"> Accessibility</a></li>
+                <li><a href="#" class="hover:underline"> Ads Info</a></li>
+                <li><a href="#" class="hover:underline"> More</a></li>
+                <li>© 2026 X Corp.</li>
+            </ul>
+
+            <div class="ai">
+
+                <!-- =====================================
+                    AI AGENT BUTTON
+                    ====================================== -->
+
+                <button id="aiAgentBtn"
+                    class="fixed right-6 bottom-[105px] w-[60px] h-[60px] rounded-[20px] bg-black border border-[#333639] flex items-center justify-center shadow-[0_0_22px_rgba(255,255,255,0.28)] hover:bg-[#111] hover:scale-[1.03] transition-all duration-200 z-50">
+
+                    <!-- AI ICON -->
+                    <svg viewBox="0 0 33 32" aria-hidden="true" fill="white" height="33"
+                        class="  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-mabqd8  r-1yvhtrz">
+                        <g>
+                            <path
+                                d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                            </path>
+                        </g>
+                    </svg>
+
+                </button>
+
+                <!-- =====================================
+       CHAT AGENT BUTTON
+  ====================================== -->
+
+                <button id="chatAgentBtn"
+                    class="fixed right-6 mt-[15px_0]  bottom-9 w-[60px] h-[60px] rounded-[20px] bg-black border border-[#333639] flex items-center justify-center shadow-[0_0_22px_rgba(255,255,255,0.35)] hover:bg-[#111] hover:scale-[1.03] transition-all duration-200 z-50">
+
+                    <!-- CHAT ICON -->
+                    <svg viewBox="0 0 24 24" class="w-[35px] h-[35px]" fill="none" stroke="white" stroke-width="1.8">
+
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M20.5 11.5C20.5 16.2 16.7 20 12 20C10.7 20 9.4 19.7 8.3 19.2L4 20.5L5.3 16.7C4.2 15.3 3.5 13.5 3.5 11.5C3.5 6.8 7.3 3 12 3C16.7 3 20.5 6.8 20.5 11.5Z" />
+
+                    </svg>
+
+                </button>
+
+                <!-- =====================================
+                AI AGENT PANEL
+                ====================================== -->
+
+                <div id="aiPanel"
+                    class="hidden fixed right-4 bottom-[200px] w-[350px] h-[420px] bg-black border border-[#333639] rounded-[22px] shadow-[0_0_30px_rgba(255,255,255,0.15)] z-40 overflow-hidden">
+
+                    <!-- Header -->
+                    <div class="h-[60px] px-5border-b border-[#2f3336]flex items-center justify-between">
+
+                        <div>
+                            <h2 class="font-bold text-[19px]">
+                                AI Agent
+                            </h2>
+
+                            <p class="text-[#71767b] text-[13px]">
+                                Ask anything
+                            </p>
+                        </div>
+
+                        <button id="closeAi" class="text-[#71767b] text-[25px] hover:text-white">
+                            ×
+                        </button>
+
+                    </div>
+
+
+                    <!-- Messages -->
+                    <div id="aiMessages" class="h-[295px] overflow-y-auto p-4 space-y-3">
+
+                        <div class="bg-[#16181c] rounded-[15px] p-3 text-[14px]">
+                            👋 Hello! I'm your AI Agent.
+                        </div>
+
+                    </div>
+
+
+                    <!-- Input -->
+                    <div class="absolute bottom-0 left-0 right-0 p-3">
+
+                        <div class="flex items-center gap-2
+                    bg-[#16181c]
+                    border border-[#333639]
+                    rounded-full px-4 py-2">
+
+                            <input id="aiInput" type="text" placeholder="Ask AI..." class="bg-transparent outline-none flex-1
+                    text-white text-[14px]">
+
+                            <button id="aiSend" class="text-[#1d9bf0] font-bold">
+                                Send
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =====================================
+        CHAT PANEL
+  ====================================== -->
+
+                <div id="chatPanel" class="hidden fixed right-4 bottom-[200px]
+           w-[350px] h-[420px]
+           bg-black
+           border border-[#333639]
+           rounded-[22px]
+           shadow-[0_0_30px_rgba(255,255,255,0.15)]
+           z-40 overflow-hidden">
+
+                    <!-- Header -->
+                    <div class="h-[60px] px-5
+             border-b border-[#2f3336]
+             flex items-center justify-between">
+
+                        <div>
+                            <h2 class="font-bold text-[19px]">
+                                Chat
+                            </h2>
+
+                            <p class="text-[#71767b] text-[13px]">
+                                Messages
+                            </p>
+                        </div>
+
+                        <button id="closeChat" class="text-[#71767b] text-[25px] hover:text-white">
+                            ×
+                        </button>
+
+                    </div>
+
+
+                    <!-- Chat messages -->
+                    <div id="chatMessages" class="h-[295px] overflow-y-auto p-4 space-y-3">
+
+                        <div class="bg-[#16181c]
+               rounded-[15px]
+               p-3
+               text-[14px]
+               w-fit">
+                            Welcome to Chat 👋
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chat input -->
+                    <div class="absolute bottom-0 left-0 right-0 p-3">
+
+                        <div class="flex items-center gap-2
+               bg-[#16181c]
+               border border-[#333639]
+               rounded-full px-4 py-2">
+
+                            <input id="chatInput" type="text" placeholder="Write a message..."
+                                class="bg-transparent outline-none flex-1 text-white text-[14px]">
+
+                            <button id="chatSend" class="text-[#1d9bf0] font-bold">
+                                Send
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <script src="script.js"></script>
+
+
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
